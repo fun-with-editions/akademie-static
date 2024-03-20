@@ -1,0 +1,1268 @@
+<!DOCTYPE HTML>
+<!DOCTYPE html><html class="h-100">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta  http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta  name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta  name="mobile-web-app-capable" content="yes">
+      <meta  name="apple-mobile-web-app-capable" content="yes">
+      <meta  name="apple-mobile-web-app-title" content="Ortsregister zum Projekt „Sitzungsprotokolle der ÖAW“">
+      <meta  name="msapplication-TileColor" content="#ffffff">
+      <meta  name="msapplication-TileImage" content="images/logo.png">
+      <link  rel="icon" type="image/svg+xml" href="images/logo.png" sizes="any">
+      <link  rel="profile" href="http://gmpg.org/xfn/11">
+      <title >Ortsregister zum Projekt „Sitzungsprotokolle der ÖAW“</title>
+      <link  href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+      <link  rel="stylesheet" href="css/style.css" type="text/css">
+      <link  rel="stylesheet" href="css/micro-editor.css" type="text/css">
+   </head>
+   <body class="d-flex flex-column h-100">
+      <header >
+         <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid"><a class="navbar-brand" href="index.html">Akademieprotokolle</a><button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button><div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                     <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Projekt</a><ul class="dropdown-menu">
+                           <li><a class="dropdown-item" href="about.html">Über das Projekt</a></li>
+                           <li><a class="dropdown-item" href="imprint.html">Impressum</a></li>
+                        </ul>
+                     </li>
+                     <li class="nav-item"><a class="nav-link" href="toc.html">Editionseinheiten</a></li>
+                     <li class="nav-item dropdown disabled"><a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Register</a><ul class="dropdown-menu">
+                           <li><a class="dropdown-item" href="listperson.html">Personen</a></li>
+                           <li><a class="dropdown-item" href="listplace.html">Orte</a></li>
+                           <li><a class="dropdown-item" href="listorg.html">Organisationen</a></li>
+                           <li><a class="dropdown-item" href="listbibl.html">Werke</a></li>
+                        </ul>
+                     </li>
+                     <li class="nav-item"><a title="Suche" class="nav-link" href="search.html">Suche</a></li>
+                  </ul>
+               </div>
+            </div>
+         </nav>
+      </header>
+      <main>
+         <div class="container">
+            <h1>Ortsregister zum Projekt „Sitzungsprotokolle der ÖAW“</h1>
+            <div id="map"></div>
+            <table class="table" id="myTable">
+               <thead>
+                  <tr>
+                     <th scope="col" width="20" tabulator-formatter="html" tabulator-headerSort="false" tabulator-download="false">#</th>
+                     <th scope="col" tabulator-headerFilter="input">Ortsname</th>
+                     <th scope="col" tabulator-headerFilter="input">Lat</th>
+                     <th scope="col" tabulator-headerFilter="input">Long</th>
+                     <th scope="col" tabulator-headerFilter="input">ID</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td><a href="wien.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Wien</td>
+                     <td>48.20849</td>
+                     <td>16.37208</td>
+                     <td>wien</td>
+                  </tr>
+                  <tr>
+                     <td><a href="graz.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Graz</td>
+                     <td>47.06667</td>
+                     <td>15.45</td>
+                     <td>graz</td>
+                  </tr>
+                  <tr>
+                     <td><a href="london.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>London</td>
+                     <td>51.50853</td>
+                     <td>-0.12574</td>
+                     <td>london</td>
+                  </tr>
+                  <tr>
+                     <td><a href="varna.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Varna</td>
+                     <td>43.21667</td>
+                     <td>27.91667</td>
+                     <td>varna</td>
+                  </tr>
+                  <tr>
+                     <td><a href="ulm.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Ulm</td>
+                     <td>48.39841</td>
+                     <td>9.99155</td>
+                     <td>ulm</td>
+                  </tr>
+                  <tr>
+                     <td><a href="triest.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Triest</td>
+                     <td>45.66667</td>
+                     <td>13.76667</td>
+                     <td>triest</td>
+                  </tr>
+                  <tr>
+                     <td><a href="varna_1.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Varna</td>
+                     <td>43.21667</td>
+                     <td>27.91667</td>
+                     <td>varna_1</td>
+                  </tr>
+                  <tr>
+                     <td><a href="munchen.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>München</td>
+                     <td>48.13743</td>
+                     <td>11.57549</td>
+                     <td>munchen</td>
+                  </tr>
+                  <tr>
+                     <td><a href="venedig.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Venedig</td>
+                     <td>45.438609</td>
+                     <td>12.32667</td>
+                     <td>venedig</td>
+                  </tr>
+                  <tr>
+                     <td><a href="trient.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Trient</td>
+                     <td></td>
+                     <td></td>
+                     <td>trient</td>
+                  </tr>
+                  <tr>
+                     <td><a href="colmar.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Colmar</td>
+                     <td>48.08078</td>
+                     <td>7.35584</td>
+                     <td>colmar</td>
+                  </tr>
+                  <tr>
+                     <td><a href="prag.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Prag</td>
+                     <td>50.08804</td>
+                     <td>14.42076</td>
+                     <td>prag</td>
+                  </tr>
+                  <tr>
+                     <td><a href="sankt-petersburg.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Sankt Petersburg</td>
+                     <td>59.93863</td>
+                     <td>30.31413</td>
+                     <td>sankt-petersburg</td>
+                  </tr>
+                  <tr>
+                     <td><a href="paris.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Paris</td>
+                     <td>48.85341</td>
+                     <td>2.3488</td>
+                     <td>paris</td>
+                  </tr>
+                  <tr>
+                     <td><a href="dresden.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Dresden</td>
+                     <td>51.05089</td>
+                     <td>13.73832</td>
+                     <td>dresden</td>
+                  </tr>
+                  <tr>
+                     <td><a href="leipzig.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Leipzig</td>
+                     <td>51.33962</td>
+                     <td>12.37129</td>
+                     <td>leipzig</td>
+                  </tr>
+                  <tr>
+                     <td><a href="stockholm.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Stockholm</td>
+                     <td>59.33258</td>
+                     <td>18.0649</td>
+                     <td>stockholm</td>
+                  </tr>
+                  <tr>
+                     <td><a href="bagdad.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Bagdad</td>
+                     <td>33.34058</td>
+                     <td>44.40088</td>
+                     <td>bagdad</td>
+                  </tr>
+                  <tr>
+                     <td><a href="konstantinopel.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Konstantinopel</td>
+                     <td>41.013611</td>
+                     <td>28.949444</td>
+                     <td>konstantinopel</td>
+                  </tr>
+                  <tr>
+                     <td><a href="innsbruck.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Innsbruck</td>
+                     <td>47.26266</td>
+                     <td>11.39454</td>
+                     <td>innsbruck</td>
+                  </tr>
+                  <tr>
+                     <td><a href="pressburg.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Pressburg</td>
+                     <td>48.14816</td>
+                     <td>17.10674</td>
+                     <td>pressburg</td>
+                  </tr>
+                  <tr>
+                     <td><a href="beirut.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Beirut</td>
+                     <td>33.88894</td>
+                     <td>35.49442</td>
+                     <td>beirut</td>
+                  </tr>
+                  <tr>
+                     <td><a href="salzburg.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Salzburg</td>
+                     <td>47.79941</td>
+                     <td>13.04399</td>
+                     <td>salzburg</td>
+                  </tr>
+                  <tr>
+                     <td><a href="linz.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Linz</td>
+                     <td>48.30639</td>
+                     <td>14.28611</td>
+                     <td>linz</td>
+                  </tr>
+                  <tr>
+                     <td><a href="raigern.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Raigern</td>
+                     <td>49.090209</td>
+                     <td>16.60388</td>
+                     <td>raigern</td>
+                  </tr>
+                  <tr>
+                     <td><a href="damaskus.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Damaskus</td>
+                     <td>33.5102</td>
+                     <td>36.29128</td>
+                     <td>damaskus</td>
+                  </tr>
+                  <tr>
+                     <td><a href="bamberg.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Bamberg</td>
+                     <td>49.89873</td>
+                     <td>10.90067</td>
+                     <td>bamberg</td>
+                  </tr>
+                  <tr>
+                     <td><a href="laibach.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Laibach</td>
+                     <td>46.05108</td>
+                     <td>14.50513</td>
+                     <td>laibach</td>
+                  </tr>
+                  <tr>
+                     <td><a href="salona.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Salona</td>
+                     <td>43.5432</td>
+                     <td>16.49314</td>
+                     <td>salona</td>
+                  </tr>
+                  <tr>
+                     <td><a href="split-dalmatien.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Split / Dalmatien</td>
+                     <td>43.50891</td>
+                     <td>16.43915</td>
+                     <td>split-dalmatien</td>
+                  </tr>
+                  <tr>
+                     <td><a href="zadar.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Zadar</td>
+                     <td>44.11972</td>
+                     <td>15.242219</td>
+                     <td>zadar</td>
+                  </tr>
+                  <tr>
+                     <td><a href="prossnitz.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Prossnitz</td>
+                     <td>49.47188</td>
+                     <td>17.11184</td>
+                     <td>prossnitz</td>
+                  </tr>
+                  <tr>
+                     <td><a href="brussel.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Brüssel</td>
+                     <td></td>
+                     <td></td>
+                     <td>brussel</td>
+                  </tr>
+                  <tr>
+                     <td><a href="olmutz.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Olmütz</td>
+                     <td>49.59552</td>
+                     <td>17.25175</td>
+                     <td>olmutz</td>
+                  </tr>
+                  <tr>
+                     <td><a href="mailand.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Mailand</td>
+                     <td>45.464269</td>
+                     <td>9.18951</td>
+                     <td>mailand</td>
+                  </tr>
+                  <tr>
+                     <td><a href="jihlava.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Jihlava</td>
+                     <td>49.3961</td>
+                     <td>15.59124</td>
+                     <td>jihlava</td>
+                  </tr>
+                  <tr>
+                     <td><a href="tubingen.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Tübingen</td>
+                     <td>48.52266</td>
+                     <td>9.05222</td>
+                     <td>tubingen</td>
+                  </tr>
+                  <tr>
+                     <td><a href="kairo.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Kairo</td>
+                     <td>30.06263</td>
+                     <td>31.24967</td>
+                     <td>kairo</td>
+                  </tr>
+                  <tr>
+                     <td><a href="antwerpen.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Antwerpen</td>
+                     <td>51.21989</td>
+                     <td>4.40346</td>
+                     <td>antwerpen</td>
+                  </tr>
+                  <tr>
+                     <td><a href="iraklio.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Iraklio</td>
+                     <td>35.32787</td>
+                     <td>25.14341</td>
+                     <td>iraklio</td>
+                  </tr>
+                  <tr>
+                     <td><a href="lemberg.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Lemberg</td>
+                     <td>49.8397</td>
+                     <td>24.0297</td>
+                     <td>lemberg</td>
+                  </tr>
+                  <tr>
+                     <td><a href="berlin.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Berlin</td>
+                     <td>52.52437</td>
+                     <td>13.41053</td>
+                     <td>berlin</td>
+                  </tr>
+                  <tr>
+                     <td><a href="seckau.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Seckau</td>
+                     <td>47.26667</td>
+                     <td>14.78333</td>
+                     <td>seckau</td>
+                  </tr>
+                  <tr>
+                     <td><a href="simancas.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Simancas</td>
+                     <td>41.59072</td>
+                     <td>-4.82796</td>
+                     <td>simancas</td>
+                  </tr>
+                  <tr>
+                     <td><a href="gotha.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Gotha</td>
+                     <td>50.94823</td>
+                     <td>10.70193</td>
+                     <td>gotha</td>
+                  </tr>
+                  <tr>
+                     <td><a href="gottingen.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Göttingen</td>
+                     <td>51.53443</td>
+                     <td>9.93228</td>
+                     <td>gottingen</td>
+                  </tr>
+                  <tr>
+                     <td><a href="heidelberg.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Heidelberg</td>
+                     <td>49.40768</td>
+                     <td>8.69079</td>
+                     <td>heidelberg</td>
+                  </tr>
+                  <tr>
+                     <td><a href="regensburg.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Regensburg</td>
+                     <td>49.01513</td>
+                     <td>12.10161</td>
+                     <td>regensburg</td>
+                  </tr>
+                  <tr>
+                     <td><a href="bonn.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Bonn</td>
+                     <td>50.73438</td>
+                     <td>7.09549</td>
+                     <td>bonn</td>
+                  </tr>
+                  <tr>
+                     <td><a href="dubrovnik.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Dubrovnik</td>
+                     <td>42.64125</td>
+                     <td>18.10909</td>
+                     <td>dubrovnik</td>
+                  </tr>
+                  <tr>
+                     <td><a href="luzern.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Luzern</td>
+                     <td>47.05048</td>
+                     <td>8.30635</td>
+                     <td>luzern</td>
+                  </tr>
+                  <tr>
+                     <td><a href="sankt-florian.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Sankt Florian</td>
+                     <td>48.20557</td>
+                     <td>14.37724</td>
+                     <td>sankt-florian</td>
+                  </tr>
+                  <tr>
+                     <td><a href="cagliari.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Cagliari</td>
+                     <td>39.23054</td>
+                     <td>9.11917</td>
+                     <td>cagliari</td>
+                  </tr>
+                  <tr>
+                     <td><a href="mossul.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Mossul</td>
+                     <td>36.335</td>
+                     <td>43.11889</td>
+                     <td>mossul</td>
+                  </tr>
+                  <tr>
+                     <td><a href="melk.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Melk</td>
+                     <td>48.22737</td>
+                     <td>15.33186</td>
+                     <td>melk</td>
+                  </tr>
+                  <tr>
+                     <td><a href="herzogenburg.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Herzogenburg</td>
+                     <td>48.28137</td>
+                     <td>15.69431</td>
+                     <td>herzogenburg</td>
+                  </tr>
+                  <tr>
+                     <td><a href="aleppo.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Aleppo</td>
+                     <td>36.20124</td>
+                     <td>37.16117</td>
+                     <td>aleppo</td>
+                  </tr>
+                  <tr>
+                     <td><a href="mekka.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Mekka</td>
+                     <td>21.42664</td>
+                     <td>39.82563</td>
+                     <td>mekka</td>
+                  </tr>
+                  <tr>
+                     <td><a href="admont.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Admont</td>
+                     <td>47.57537</td>
+                     <td>14.46075</td>
+                     <td>admont</td>
+                  </tr>
+                  <tr>
+                     <td><a href="kremsier.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Kremsier</td>
+                     <td>49.29785</td>
+                     <td>17.39312</td>
+                     <td>kremsier</td>
+                  </tr>
+                  <tr>
+                     <td><a href="brunn.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Brünn</td>
+                     <td>49.19522</td>
+                     <td>16.60796</td>
+                     <td>brunn</td>
+                  </tr>
+                  <tr>
+                     <td><a href="stuhlweissenburg.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Stuhlweißenburg</td>
+                     <td>47.18995</td>
+                     <td>18.41034</td>
+                     <td>stuhlweissenburg</td>
+                  </tr>
+                  <tr>
+                     <td><a href="frankfurt-am-main.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Frankfurt am Main</td>
+                     <td>50.11552</td>
+                     <td>8.68417</td>
+                     <td>frankfurt-am-main</td>
+                  </tr>
+                  <tr>
+                     <td><a href="castelnuovo.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Castelnuovo</td>
+                     <td>46.05412</td>
+                     <td>11.48916</td>
+                     <td>castelnuovo</td>
+                  </tr>
+                  <tr>
+                     <td><a href="cernosice.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Černošice</td>
+                     <td>49.96008</td>
+                     <td>14.31979</td>
+                     <td>cernosice</td>
+                  </tr>
+                  <tr>
+                     <td><a href="michaelbeuern.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Michaelbeuern</td>
+                     <td>48.01667</td>
+                     <td>13.03333</td>
+                     <td>michaelbeuern</td>
+                  </tr>
+                  <tr>
+                     <td><a href="padua.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Padua</td>
+                     <td>45.40797</td>
+                     <td>11.88586</td>
+                     <td>padua</td>
+                  </tr>
+                  <tr>
+                     <td><a href="odessa.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Odessa</td>
+                     <td>46.47747</td>
+                     <td>30.73262</td>
+                     <td>odessa</td>
+                  </tr>
+                  <tr>
+                     <td><a href="kertsch.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Kertsch</td>
+                     <td>45.35675</td>
+                     <td>36.47542</td>
+                     <td>kertsch</td>
+                  </tr>
+                  <tr>
+                     <td><a href="sankt-paul-im-levanttal.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Sankt Paul im Levanttal</td>
+                     <td>46.70056</td>
+                     <td>14.87556</td>
+                     <td>sankt-paul-im-levanttal</td>
+                  </tr>
+                  <tr>
+                     <td><a href="neureisch.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Neureisch</td>
+                     <td>49.13941</td>
+                     <td>15.56359</td>
+                     <td>neureisch</td>
+                  </tr>
+                  <tr>
+                     <td><a href="lilienfeld.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Lilienfeld</td>
+                     <td>48.01312</td>
+                     <td>15.59664</td>
+                     <td>lilienfeld</td>
+                  </tr>
+                  <tr>
+                     <td><a href="wiener-neustadt.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Wiener Neustadt</td>
+                     <td>47.8</td>
+                     <td>16.25</td>
+                     <td>wiener-neustadt</td>
+                  </tr>
+                  <tr>
+                     <td><a href="hainburg-an-der-donau.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Hainburg an der Donau</td>
+                     <td>48.14627</td>
+                     <td>16.94504</td>
+                     <td>hainburg-an-der-donau</td>
+                  </tr>
+                  <tr>
+                     <td><a href="zurich.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Zürich</td>
+                     <td>47.36667</td>
+                     <td>8.55</td>
+                     <td>zurich</td>
+                  </tr>
+                  <tr>
+                     <td><a href="bruck-an-der-leitha.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Bruck an der Leitha</td>
+                     <td>48.0286</td>
+                     <td>16.75847</td>
+                     <td>bruck-an-der-leitha</td>
+                  </tr>
+                  <tr>
+                     <td><a href="klagenfurt.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Klagenfurt</td>
+                     <td>46.62472</td>
+                     <td>14.30528</td>
+                     <td>klagenfurt</td>
+                  </tr>
+                  <tr>
+                     <td><a href="pietroasa-mica.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Pietroasa Mică</td>
+                     <td>45.11003</td>
+                     <td>26.57751</td>
+                     <td>pietroasa-mica</td>
+                  </tr>
+                  <tr>
+                     <td><a href="neapel.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Neapel</td>
+                     <td>40.83333</td>
+                     <td>14.25</td>
+                     <td>neapel</td>
+                  </tr>
+                  <tr>
+                     <td><a href="bari.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Bari</td>
+                     <td>41.12066</td>
+                     <td>16.86982</td>
+                     <td>bari</td>
+                  </tr>
+                  <tr>
+                     <td><a href="sankt-trond.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Sankt Trond</td>
+                     <td>50.81679</td>
+                     <td>5.18647</td>
+                     <td>sankt-trond</td>
+                  </tr>
+                  <tr>
+                     <td><a href="bassano-del-grappa.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Bassano del Grappa</td>
+                     <td>45.7676</td>
+                     <td>11.7357</td>
+                     <td>bassano-del-grappa</td>
+                  </tr>
+                  <tr>
+                     <td><a href="canea.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Canea</td>
+                     <td>35.51124</td>
+                     <td>24.02921</td>
+                     <td>canea</td>
+                  </tr>
+                  <tr>
+                     <td><a href="perugia.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Perugia</td>
+                     <td>43.1122</td>
+                     <td>12.38878</td>
+                     <td>perugia</td>
+                  </tr>
+                  <tr>
+                     <td><a href="silchester.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Silchester</td>
+                     <td>51.35356</td>
+                     <td>-1.10061</td>
+                     <td>silchester</td>
+                  </tr>
+                  <tr>
+                     <td><a href="schassburg.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Schäßburg</td>
+                     <td>46.22141</td>
+                     <td>24.79279</td>
+                     <td>schassburg</td>
+                  </tr>
+                  <tr>
+                     <td><a href="stuttgart.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Stuttgart</td>
+                     <td>48.78232</td>
+                     <td>9.17702</td>
+                     <td>stuttgart</td>
+                  </tr>
+                  <tr>
+                     <td><a href="radoboj.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Radoboj</td>
+                     <td>46.16639</td>
+                     <td>15.92361</td>
+                     <td>radoboj</td>
+                  </tr>
+                  <tr>
+                     <td><a href="czernowitz.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Czernowitz</td>
+                     <td>48.291388</td>
+                     <td>25.940277</td>
+                     <td>czernowitz</td>
+                  </tr>
+                  <tr>
+                     <td><a href="manastirea-humorului.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Mănăstirea Humorului</td>
+                     <td>47.6</td>
+                     <td>25.86667</td>
+                     <td>manastirea-humorului</td>
+                  </tr>
+                  <tr>
+                     <td><a href="hermannstadt.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Hermannstadt</td>
+                     <td>45.8</td>
+                     <td>24.15</td>
+                     <td>hermannstadt</td>
+                  </tr>
+                  <tr>
+                     <td><a href="sissek.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Sissek</td>
+                     <td>45.46611</td>
+                     <td>16.37833</td>
+                     <td>sissek</td>
+                  </tr>
+                  <tr>
+                     <td><a href="marburg.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Marburg</td>
+                     <td>50.80904</td>
+                     <td>8.77069</td>
+                     <td>marburg</td>
+                  </tr>
+                  <tr>
+                     <td><a href="lyon.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Lyon</td>
+                     <td>45.74846</td>
+                     <td>4.84671</td>
+                     <td>lyon</td>
+                  </tr>
+                  <tr>
+                     <td><a href="moggio-udinese.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Moggio Udinese</td>
+                     <td>46.41083</td>
+                     <td>13.20139</td>
+                     <td>moggio-udinese</td>
+                  </tr>
+                  <tr>
+                     <td><a href="kabul.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Kabul</td>
+                     <td>34.52813</td>
+                     <td>69.17233</td>
+                     <td>kabul</td>
+                  </tr>
+                  <tr>
+                     <td><a href="madrid.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Madrid</td>
+                     <td>40.4165</td>
+                     <td>-3.70256</td>
+                     <td>madrid</td>
+                  </tr>
+                  <tr>
+                     <td><a href="braunschweig.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Braunschweig</td>
+                     <td>52.26594</td>
+                     <td>10.52673</td>
+                     <td>braunschweig</td>
+                  </tr>
+                  <tr>
+                     <td><a href="karlsruhe.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Karlsruhe</td>
+                     <td>49.00937</td>
+                     <td>8.40444</td>
+                     <td>karlsruhe</td>
+                  </tr>
+                  <tr>
+                     <td><a href="oslo.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Oslo</td>
+                     <td>59.91273</td>
+                     <td>10.74609</td>
+                     <td>oslo</td>
+                  </tr>
+                  <tr>
+                     <td><a href="minden.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Minden</td>
+                     <td>52.28953</td>
+                     <td>8.91455</td>
+                     <td>minden</td>
+                  </tr>
+                  <tr>
+                     <td><a href="neuwied.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Neuwied</td>
+                     <td>50.4336</td>
+                     <td>7.47057</td>
+                     <td>neuwied</td>
+                  </tr>
+                  <tr>
+                     <td><a href="zvenigorod.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Zvenigorod</td>
+                     <td>55.73401</td>
+                     <td>36.85918</td>
+                     <td>zvenigorod</td>
+                  </tr>
+                  <tr>
+                     <td><a href="raab.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Raab</td>
+                     <td>47.68333</td>
+                     <td>17.63512</td>
+                     <td>raab</td>
+                  </tr>
+                  <tr>
+                     <td><a href="feldkirch.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Feldkirch</td>
+                     <td>47.23306</td>
+                     <td>9.6</td>
+                     <td>feldkirch</td>
+                  </tr>
+                  <tr>
+                     <td><a href="gorz.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Görz</td>
+                     <td>45.94088</td>
+                     <td>13.62167</td>
+                     <td>gorz</td>
+                  </tr>
+                  <tr>
+                     <td><a href="basel.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Basel</td>
+                     <td>47.55839</td>
+                     <td>7.57327</td>
+                     <td>basel</td>
+                  </tr>
+                  <tr>
+                     <td><a href="gradisca-d-isonzo.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Gradisca d'Isonzo</td>
+                     <td>45.8925</td>
+                     <td>13.50167</td>
+                     <td>gradisca-d-isonzo</td>
+                  </tr>
+                  <tr>
+                     <td><a href="mogador.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Mogador</td>
+                     <td>31.5125</td>
+                     <td>-9.77</td>
+                     <td>mogador</td>
+                  </tr>
+                  <tr>
+                     <td><a href="tetouan.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Tétouan</td>
+                     <td>35.57845</td>
+                     <td>-5.36837</td>
+                     <td>tetouan</td>
+                  </tr>
+                  <tr>
+                     <td><a href="mazagan.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Mazagan</td>
+                     <td>33.2492</td>
+                     <td>-8.50668</td>
+                     <td>mazagan</td>
+                  </tr>
+                  <tr>
+                     <td><a href="namur.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Namur</td>
+                     <td>50.4669</td>
+                     <td>4.86746</td>
+                     <td>namur</td>
+                  </tr>
+                  <tr>
+                     <td><a href="janina.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Janina</td>
+                     <td>39.66486</td>
+                     <td>20.85189</td>
+                     <td>janina</td>
+                  </tr>
+                  <tr>
+                     <td><a href="syros.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Syros</td>
+                     <td>37.42698</td>
+                     <td>24.91631</td>
+                     <td>syros</td>
+                  </tr>
+                  <tr>
+                     <td><a href="breslau.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Breslau</td>
+                     <td>51.10773</td>
+                     <td>17.03533</td>
+                     <td>breslau</td>
+                  </tr>
+                  <tr>
+                     <td><a href="new-york-city.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>New York City</td>
+                     <td>40.71427</td>
+                     <td>-74.00597</td>
+                     <td>new-york-city</td>
+                  </tr>
+                  <tr>
+                     <td><a href="amsterdam.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Amsterdam</td>
+                     <td>52.37403</td>
+                     <td>4.88969</td>
+                     <td>amsterdam</td>
+                  </tr>
+                  <tr>
+                     <td><a href="gottweig.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Göttweig</td>
+                     <td>48.36652</td>
+                     <td>15.61295</td>
+                     <td>gottweig</td>
+                  </tr>
+                  <tr>
+                     <td><a href="gibraltar.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Gibraltar</td>
+                     <td>36.13333</td>
+                     <td>-5.35</td>
+                     <td>gibraltar</td>
+                  </tr>
+                  <tr>
+                     <td><a href="barcelona.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Barcelona</td>
+                     <td>41.38879</td>
+                     <td>2.15899</td>
+                     <td>barcelona</td>
+                  </tr>
+                  <tr>
+                     <td><a href="hallstatt.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Hallstatt</td>
+                     <td>47.56231</td>
+                     <td>13.64912</td>
+                     <td>hallstatt</td>
+                  </tr>
+                  <tr>
+                     <td><a href="gent.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Gent</td>
+                     <td>51.05</td>
+                     <td>3.71667</td>
+                     <td>gent</td>
+                  </tr>
+                  <tr>
+                     <td><a href="aquileia.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Aquileia</td>
+                     <td>45.7683</td>
+                     <td>13.36779</td>
+                     <td>aquileia</td>
+                  </tr>
+                  <tr>
+                     <td><a href="eger.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Eger</td>
+                     <td>50.07963</td>
+                     <td>12.37392</td>
+                     <td>eger</td>
+                  </tr>
+                  <tr>
+                     <td><a href="kremsmunster.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Kremsmünster</td>
+                     <td>48.0529</td>
+                     <td>14.129189</td>
+                     <td>kremsmunster</td>
+                  </tr>
+                  <tr>
+                     <td><a href="kopenhagen.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Kopenhagen</td>
+                     <td>55.67594</td>
+                     <td>12.56553</td>
+                     <td>kopenhagen</td>
+                  </tr>
+                  <tr>
+                     <td><a href="palmyra.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Palmyra</td>
+                     <td>34.5624</td>
+                     <td>38.28402</td>
+                     <td>palmyra</td>
+                  </tr>
+                  <tr>
+                     <td><a href="giessen.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Gießen</td>
+                     <td>50.583329</td>
+                     <td>8.65</td>
+                     <td>giessen</td>
+                  </tr>
+                  <tr>
+                     <td><a href="cividale.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Cividale</td>
+                     <td>46.09019</td>
+                     <td>13.42861</td>
+                     <td>cividale</td>
+                  </tr>
+                  <tr>
+                     <td><a href="athen.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Athen</td>
+                     <td>37.98381</td>
+                     <td>23.727539</td>
+                     <td>athen</td>
+                  </tr>
+                  <tr>
+                     <td><a href="zagreb.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Zagreb</td>
+                     <td>45.81444</td>
+                     <td>15.97798</td>
+                     <td>zagreb</td>
+                  </tr>
+                  <tr>
+                     <td><a href="budapest.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Budapest</td>
+                     <td>47.49801</td>
+                     <td>19.03991</td>
+                     <td>budapest</td>
+                  </tr>
+                  <tr>
+                     <td><a href="altenburg.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Altenburg</td>
+                     <td>48.644</td>
+                     <td>15.595</td>
+                     <td>altenburg</td>
+                  </tr>
+                  <tr>
+                     <td><a href="st-polten.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>St. Pölten</td>
+                     <td>48.2</td>
+                     <td>15.63333</td>
+                     <td>st-polten</td>
+                  </tr>
+                  <tr>
+                     <td><a href="makarska.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Makarska</td>
+                     <td>43.29694</td>
+                     <td>17.01778</td>
+                     <td>makarska</td>
+                  </tr>
+                  <tr>
+                     <td><a href="assuan.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Assuan</td>
+                     <td>24.09082</td>
+                     <td>32.89942</td>
+                     <td>assuan</td>
+                  </tr>
+                  <tr>
+                     <td><a href="konstanz.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Konstanz</td>
+                     <td>47.66033</td>
+                     <td>9.17582</td>
+                     <td>konstanz</td>
+                  </tr>
+                  <tr>
+                     <td><a href="klosterneuburg.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Klosterneuburg</td>
+                     <td>48.30521</td>
+                     <td>16.32522</td>
+                     <td>klosterneuburg</td>
+                  </tr>
+                  <tr>
+                     <td><a href="schwerin.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Schwerin</td>
+                     <td>53.63333</td>
+                     <td>11.41667</td>
+                     <td>schwerin</td>
+                  </tr>
+                  <tr>
+                     <td><a href="darmstadt.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Darmstadt</td>
+                     <td>49.87167</td>
+                     <td>8.65027</td>
+                     <td>darmstadt</td>
+                  </tr>
+                  <tr>
+                     <td><a href="rom.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Rom</td>
+                     <td>41.894739</td>
+                     <td>12.4839</td>
+                     <td>rom</td>
+                  </tr>
+                  <tr>
+                     <td><a href="kronstadt.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Kronstadt</td>
+                     <td>45.64861</td>
+                     <td>25.60613</td>
+                     <td>kronstadt</td>
+                  </tr>
+                  <tr>
+                     <td><a href="seitenstetten.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Seitenstetten</td>
+                     <td>48.036</td>
+                     <td>14.6542</td>
+                     <td>seitenstetten</td>
+                  </tr>
+                  <tr>
+                     <td><a href="den-haag.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Den Haag</td>
+                     <td>52.07667</td>
+                     <td>4.29861</td>
+                     <td>den-haag</td>
+                  </tr>
+                  <tr>
+                     <td><a href="leiden.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Leiden</td>
+                     <td>52.158329</td>
+                     <td>4.493059</td>
+                     <td>leiden</td>
+                  </tr>
+                  <tr>
+                     <td><a href="abbeville.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Abbeville</td>
+                     <td>50.10521</td>
+                     <td>1.83547</td>
+                     <td>abbeville</td>
+                  </tr>
+                  <tr>
+                     <td><a href="bogota.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Bogotá</td>
+                     <td>4.609444</td>
+                     <td>-74.081666</td>
+                     <td>bogota</td>
+                  </tr>
+                  <tr>
+                     <td><a href="pisa.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Pisa</td>
+                     <td>43.70853</td>
+                     <td>10.4036</td>
+                     <td>pisa</td>
+                  </tr>
+                  <tr>
+                     <td><a href="siena.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Siena</td>
+                     <td>43.31822</td>
+                     <td>11.33064</td>
+                     <td>siena</td>
+                  </tr>
+                  <tr>
+                     <td><a href="ferrara.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Ferrara</td>
+                     <td>44.82678</td>
+                     <td>11.62071</td>
+                     <td>ferrara</td>
+                  </tr>
+                  <tr>
+                     <td><a href="schongrabern.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Schöngrabern</td>
+                     <td>48.602</td>
+                     <td>16.063</td>
+                     <td>schongrabern</td>
+                  </tr>
+                  <tr>
+                     <td><a href="troppau.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Troppau</td>
+                     <td>49.938659</td>
+                     <td>17.90257</td>
+                     <td>troppau</td>
+                  </tr>
+                  <tr>
+                     <td><a href="freising.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Freising</td>
+                     <td>48.40351</td>
+                     <td>11.74876</td>
+                     <td>freising</td>
+                  </tr>
+                  <tr>
+                     <td><a href="augsburg.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Augsburg</td>
+                     <td>48.37154</td>
+                     <td>10.89851</td>
+                     <td>augsburg</td>
+                  </tr>
+                  <tr>
+                     <td><a href="neuburg-an-der-donau.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Neuburg an der Donau</td>
+                     <td>48.73218</td>
+                     <td>11.18709</td>
+                     <td>neuburg-an-der-donau</td>
+                  </tr>
+                  <tr>
+                     <td><a href="carnuntum.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Carnuntum</td>
+                     <td>48.11296</td>
+                     <td>16.8616</td>
+                     <td>carnuntum</td>
+                  </tr>
+                  <tr>
+                     <td><a href="arad.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Arad</td>
+                     <td>46.18333</td>
+                     <td>21.31667</td>
+                     <td>arad</td>
+                  </tr>
+                  <tr>
+                     <td><a href="bukarest.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Bukarest</td>
+                     <td>44.43225</td>
+                     <td>26.106259</td>
+                     <td>bukarest</td>
+                  </tr>
+                  <tr>
+                     <td><a href="pola.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Pola</td>
+                     <td>44.86833</td>
+                     <td>13.84806</td>
+                     <td>pola</td>
+                  </tr>
+                  <tr>
+                     <td><a href="vorau.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Vorau</td>
+                     <td>47.4009</td>
+                     <td>15.89</td>
+                     <td>vorau</td>
+                  </tr>
+                  <tr>
+                     <td><a href="neuhaus.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Neuhaus</td>
+                     <td>49.14404</td>
+                     <td>15.00301</td>
+                     <td>neuhaus</td>
+                  </tr>
+                  <tr>
+                     <td><a href="pirnitz.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Pirnitz</td>
+                     <td>49.30695</td>
+                     <td>15.67642</td>
+                     <td>pirnitz</td>
+                  </tr>
+                  <tr>
+                     <td><a href="jaromeritz.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Jaromeritz</td>
+                     <td>49.09408</td>
+                     <td>15.89331</td>
+                     <td>jaromeritz</td>
+                  </tr>
+                  <tr>
+                     <td><a href="halle-saale.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Halle (Saale)</td>
+                     <td></td>
+                     <td></td>
+                     <td>halle-saale</td>
+                  </tr>
+                  <tr>
+                     <td><a href="pochlarn.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Pöchlarn</td>
+                     <td>48.20185</td>
+                     <td>15.23095</td>
+                     <td>pochlarn</td>
+                  </tr>
+                  <tr>
+                     <td><a href="ossegg.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Ossegg</td>
+                     <td>50.62115</td>
+                     <td>13.69274</td>
+                     <td>ossegg</td>
+                  </tr>
+                  <tr>
+                     <td><a href="lambach.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Lambach</td>
+                     <td>48.092759</td>
+                     <td>13.87453</td>
+                     <td>lambach</td>
+                  </tr>
+                  <tr>
+                     <td><a href="hohenfurth.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Hohenfurth</td>
+                     <td>48.61598</td>
+                     <td>14.31183</td>
+                     <td>hohenfurth</td>
+                  </tr>
+                  <tr>
+                     <td><a href="neustift-bei-brixen.html"><i class="bi bi-link-45deg"></i></a></td>
+                     <td>Neustift bei Brixen</td>
+                     <td>46.74313</td>
+                     <td>11.64801</td>
+                     <td>neustift-bei-brixen</td>
+                  </tr>
+               </tbody>
+            </table>
+            <h4>Download Table</h4>
+            <div class="button-group"><button type="button" class="btn btn-outline-secondary" id="download-csv" title="Download CSV"><i class="bi bi-filetype-csv"></i><span class="visually-hidden">Download CSV</span></button><button type="button" class="btn btn-outline-secondary" id="download-json" title="Download JSON"><i class="bi bi-filetype-json"></i><span class="visually-hidden">Download JSON</span></button><button type="button" class="btn btn-outline-secondary" id="download-html" title="Download HTML"><i class="bi bi-filetype-html"></i><span class="visually-hidden">Download HTML</span></button></div>
+         </div>
+      </main>
+      <footer  class="footer mt-auto py-3 bg-body-tertiary">
+         <div class="float-end me-3"><a href="https://github.com/fun-with-editions/akademie-static"><i class="bi bi-github"></i></a></div>
+      </footer><script  src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script><script  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script><link href="https://unpkg.com/tabulator-tables@5.5.2/dist/css/tabulator.min.css" rel="stylesheet">
+      <link href="https://unpkg.com/tabulator-tables@5.5.0/dist/css/tabulator_bootstrap5.min.css" rel="stylesheet"><script type="text/javascript" src="https://unpkg.com/tabulator-tables@5.5.2/dist/js/tabulator.min.js"></script><script src="tabulator-js/config.js"></script><script>
+            var table = new Tabulator("#myTable", config);
+            //trigger download of data.csv file
+            document.getElementById("download-csv").addEventListener("click", function(){
+            table.download("csv", "data.csv");
+            });
+            
+            //trigger download of data.json file
+            document.getElementById("download-json").addEventListener("click", function(){
+            table.download("json", "data.json");
+            });
+            
+            //trigger download of data.html file
+            document.getElementById("download-html").addEventListener("click", function(){
+            table.download("html", "data.html", {style:true});
+            });
+        </script></body>
+</html>
